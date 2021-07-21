@@ -4,7 +4,6 @@ package org.acme.demo.service.impl;
 import java.io.File;
 import java.io.IOException;
 import java.text.DateFormat;
-import java.util.Base64;
 import java.util.Date;
 import java.util.List;
 import java.util.logging.Level;
@@ -119,6 +118,6 @@ private void saveFile(MessageDto messageDto){
     if (
       messageDto.getMessageText().trim().isEmpty() &&
       messageDto.getMessageType().isEmpty()
-    ) throw new ParamException("MessageText or optiosn must be specified");
+    ) throw new ParamException("MessageText or optios must be specified");
   }
 }
